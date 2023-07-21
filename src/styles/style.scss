@@ -1,0 +1,43 @@
+$color_bg: black;
+$color_text: white;
+$font_size: 16px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $color_bg;
+    color: $color_text;
+    font-size: $font_size;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 144.1rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+    &-item{
+        margin: 0 1.5rem;
+    }
+
+    &-link{
+        text-decoration: none;
+        font-weight: 700;
+        color: rgb($color_text, 0.5) ;
+    }
+    &::after{
+        content: '';
+        opacity: 0;
+        display: block;
+        
+    }
+}

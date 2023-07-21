@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 144.1rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.nav-item {
+  margin: 0 1.5rem;
+}
+.nav-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+}
+.nav::after {
+  content: "";
+  opacity: 0;
+  display: block;
+}/*# sourceMappingURL=style.css.map */
