@@ -37,10 +37,53 @@ body {
   font-weight: 700;
   color: rgba(255, 255, 255, 0.5);
 }
-.nav::after {
+.nav-link::after {
   content: "";
   opacity: 0;
   display: block;
+  height: 2px;
+  margin-top: 5px;
+  border-radius: 5rem;
+  background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+}
+.nav-link.active {
+  color: white;
+}
+.nav-link.active::after {
+  opacity: 1;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  background-size: cover;
+  background-position: center;
+  padding-left: 0;
+}
+.control-item {
+  margin-left: 75px;
+}
+.control-btn {
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.control-btn_search {
+  background-image: url(../images/search.svg);
+  width: 18px;
+  width: 16px;
+}
+.control-btn_profile {
+  background-image: url(../images/Profile.svg);
+  width: 18px;
+  width: 16px;
+}
+.control-btn_notice {
+  background-image: url(../images/Notice.svg);
+  width: 18px;
+  width: 16px;
 }/*# sourceMappingURL=style.css.map */
     </style>
   </head>
@@ -50,22 +93,22 @@ body {
         <nav>
           <ul class="nav">
             <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
-            <li class="nav-item"><a class="nav-link active" href="">TV shows</a></li>
-            <li class="nav-item"><a class="nav-link active" href="">Movies</a></li>
-            <li class="nav-item"><a class="nav-link active" href="">Series</a></li>
-          </ul>
-          <ul class="control">
-            <li class="control item">
-              <button class="control-btn control-btn_search"></button>
-            </li>
-            <li class="control item">
-              <button class="control-btn control-btn_notice"></button>
-            </li>
-            <li class="control item">
-              <button class="control-btn control-btn_account"></button>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="">TV shows</a></li>
+            <li class="nav-item"> <a class="nav-link" href="">Movies</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Series</a></li>
           </ul>
         </nav>
+        <ul class="control">
+          <li class="control-item">
+            <button class="control-btn control-btn_search"></button>
+          </li>
+          <li class="control-item">
+            <button class="control-btn control-btn_notice"></button>
+          </li>
+          <li class="control-item">
+            <button class="control-btn control-btn_account"></button>
+          </li>
+        </ul>
       </div>
     </header>
     <h1>Pug - node template engine</h1>
